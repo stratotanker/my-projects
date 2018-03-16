@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>new 1</title>
+<style>
+#h3style{ color:gray;}
+</style>
+<link rel="stylesheet" type="text/css" href="new 1.css"/>
+<script language="javascript" src="addfunction2.js"></script>
+<script>
+   document.write(Number.MAX_VALUE + "<br/>");
+   document.write(Number.MIN_VALUE + "<br/>");
+var samp_str = "Here are some escaped character \" \ ' \\ \t \n ";
+document.write(samp_str + "<br/>");
+
+var first_str = "First String";
+var second_str = "Second String";
+
+var combined = first_str + second_str ;
+document.write( combined + "<br/>");
+document.write( "Length of String: " + combined.length + "<br/>");
+document.write( "Substring " + combined.substring (6,12) + "<br/>");
+document.write("Last Character : " + combined.charAt(combined.length - 1) + "<br/>");
+document.write("Index of T is : " + combined.indexOf ('t') + "<br/>");
+var str_var = "5";
+var num_var = 10;
+var total = num_var + str_var;
+var mult_total = num_var * str_var;
+document.write(" 5 + 10 = " + total + "<br/>");
+document.write(" 5 * 10 = " + mult_total + "<br/>");
+var total = num_var + Number(str_var);
+document.write(" 5 + 10 = " + total + "<br/>");
+var num_var2 = String(num_var);
+document.write(num_var + num_var + "<br/>");
+document.write(num_var + num_var2 + "<br/>");
+
+var float_var = 3.141592653589793238;
+var float_str = float_var.toFixed(5);
+document.write("Shortened PI " + float_str + "<br/>");
+document.write("Integer PI " + parseInt(float_var) + "<br/>");
+document.write("Datatype of float_str " + typeof(float_str) + "<br/>");
+document.write("Datatype of float_var " + typeof(float_var) + "<br/>");
+
+var bool_var = Boolean(23);
+document.write("Boolean of 23 is " + bool_var + "<br/>");
+var rand_num1 = 5;
+var rand_num2 = 10;
+document.write("Is 5 > 10 " + (rand_num1 > rand_num2) + "<br/>");
+document.write("Is 5 >= 10 " + (rand_num1 >= rand_num2) + "<br/>");
+document.write("Is 5 < 10 " + (rand_num1 < rand_num2) + "<br/>");
+document.write("Is 5 <= 10 " + (rand_num1 <= rand_num2) + "<br/>");
+document.write("Is 5 == 10 " + (rand_num1 == rand_num2) + "<br/>");
+document.write("Is 5 != 10 " + (rand_num1 != rand_num2) + "<br/>");
+document.write("Is 5 < 10 and 5 != 10 " + ((rand_num1 < rand_num2) &&(rand_num1 != rand_num2)) + "<br/>");
+document.write("Is 5 > 10 or 5 != 10 " + ((rand_num1 < rand_num2) ||(rand_num1 != rand_num2)) + "<br/>");
+document.write("Is 5 < 10 "  + !(rand_num1 < rand_num2) + "<br/>");
+var vehicles = new Array ("car" , "truck" , "van" , "lady" ,"girl");
+document.write("The second item in the array is: " + vehicles[2] + "<br/>");
+
+for (i in vehicles)
+{
+  document.write("Value in array "+ vehicles[i]+ "<br/>");
+}
+var rand_var = ( 5 < 10)? " 5 is less than 10 " : " 5 is greater than 10 " ;
+document.write("rand_var = " + rand_var + "<br/>");
+if ( 5 > 5)
+{
+  document.write(" 5 is greater than 10 " + "<br/>");
+}
+else if( 5 < 5)
+{
+  document.write( " 5 is less than 10 " + "<br/>");
+}
+else
+{
+   document.write(" 5 is equal to 5 " + " <br/>");
+}
+
+var state = "Pennsylvania" ;
+
+switch ( state)
+{
+  case "California":
+   document.write( "Wamer than me " + " <br/>");
+   break;
+   
+  case "Pennsylvania":
+   document.write( "Same as me " + "<br/>");
+   break;
+	
+   case "Egypt":
+    document.write( "Son of a bitch" + "<br/>");
+    break;
+}
+var count = 1 ;
+while ( count <= 10)
+{
+   if ( count ==6)
+     {
+	   break;
+	 }
+
+   if( count%2)
+     {
+	   count++;
+	   continue;
+	 }
+  document.write( count + "<br/>");
+  count ++;
+}
+var count = 10;
+do{
+   document.write( count + "<br/>");
+    count--;
+} while ( count > 10);
+
+ for ( var count =0 ; count <= 10 ; count ++)
+  {
+    document.write( count + "<br>");
+	}
+
+	document.write(" 5 + 25 = " + addThese( 5,25) + "<br/>");
+
+	
+</script>
+</head>
+<body onResize="changeImage();" onLoad="alert('website Loaded');">
+<h3 id="h3style" onMouseOver="changeColor();" onMouseOut="changeAgain();">yeah man</h3>
+<img src="1.jpg" id="littlebrain" onClick="alertme();" onDblClick="alert('You double clicked');"/>
+<p id="first">This is a paragraph</p>
+<p id="second">This is a paragraph</p>
+<p id="third">This is a paragraph</p>
+
+
+<form name="formex">
+   <input type="checkbox" name="firstpara" onClick="showPara();"/>First Paragraph<br/>
+   <input type="checkbox" name="secondpara" onClick="showPara();"/>Second Paragraph<br/>
+   <input type="checkbox" name="thirdpara" onClick="showPara();"/>Third Paragraph<br/>
+
+
+</form>
+<form name="formex2">
+<p>Text input</p>
+<input type="text" name="textinput" onBlur="alert('onBlur Triggered');" onChange="alert('onChange Triggered');" onFocus="alert('onFocus Triggered');">
+</form>
+<form name="formex3">
+<p>Mouse XY</p>
+<input type="text" name="mousex"/>Mouse X Position<br/>
+<input type="text" name="mousey"/>Mouse Y Position<br/>
+<input type="text" name="keypress"/>Key Pressed<br/>
+<input type="text" name="mousebutton"/>Mouse Button Pressed<br/>
+
+</form>
+</body>
+</html>
+OnAbort<br/>
+OnError<br/>
+OnKeyDown<br/>
+OnKeyUp<br/>
+OnMouseUp<br/>
+OnReset<br/>
+OnSubmit<br/>
+OnUnload

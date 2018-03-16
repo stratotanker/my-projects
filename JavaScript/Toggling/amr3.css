@@ -1,0 +1,21 @@
+body{background:;
+     font-family:monospace;
+	 color:blue;
+}
+h3,h1{color:blue;
+   font-size:30px;
+   font-family:monospace;
+   font-weight:bold;
+   font-style:italic;
+
+}
+h4{
+	color:blue;
+   font-family:monospace;
+   font-weight:bold;
+   font-style:italic;
+	
+}
+img{width:100px;
+    height:100px;
+}
